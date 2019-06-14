@@ -95,7 +95,7 @@ print(c**2)
 
 #### Une solution possible
 
-Une solution est de remplace **le test d'égalité entre flottant** par une **un test d'inégalité**.
+Une solution est de remplacer **le test d'égalité entre flottant** par une **un test d'inégalité**.
 
 
 ```python runnable
@@ -118,16 +118,26 @@ c = 37
 print( abs(a**2 + b**2 - c**2) < 1e-10 )
 ```
 
+Une autre solution consiste à **arrondir** les nombres flottant.
+
 
 ```python runnable
+# Premier triangle rectangle
+a = 3
+b = 4
+c = 5
+print( round(a**2 + b**2,10) == round(c**2,10) )
+
+# Deuxième triangle rectangle
+a = 1
+b = 2.4
+c = 2.6
+print( round(a**2 + b**2,10) == round(c**2,10) )
+
+# Troisième triangle rectangle
 a = 20.8
 b = 30.6
 c = 37
-
-n = -1
-
-while abs(a**2 + b**2 - c**2) < 10**n :
-    n = n-1
-
-print(n)
+print( round(a**2 + b**2,10) == round(c**2,10) )
 ```
+
