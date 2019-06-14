@@ -23,9 +23,9 @@ print("Nombre de chiffres dans 2**10000 :", longueur)
 En revanche, un ordinateur a quelques soucis avec les nombres décimaux : les flottants.
 
 ```python runnable
-print("a =", 0.1)
-print("b =", 0.2)
-print("a + b =", 0.1+0.2)
+a = 0.1
+b = 0.2
+print(a+b)
 ```
 
 Ce qui engendre quelques problèmes…
