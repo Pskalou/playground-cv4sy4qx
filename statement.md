@@ -126,7 +126,7 @@ c = 37
 
 n = -1
 
-while abs(a**2 + b**2 - c**2) < 10**n ):
+while abs(a**2 + b**2 - c**2) < 10**n :
     n = n-1
 
 print(n)
