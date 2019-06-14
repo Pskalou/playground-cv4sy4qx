@@ -27,3 +27,18 @@ print(0.1)
 print(0.2)
 print(0.1+0.2)
 ```
+
+Ce qui engendre quelques problèmes…
+
+### Réciproque du théorème de Pythagore
+
+Le triangle dont les côtés mesurent 1cm, 2,4cm et 2,6cm est rectangle.
+C'est pas moi qui le dit, c'est le théorème de Pythagore :
+
+
+```python runnable
+print(1**2 + 2.4**2)
+print(2.6**2)
+```
+
+Ah non…
