@@ -32,26 +32,31 @@ Ce qui engendre quelques problèmes…
 
 ### Réciproque du théorème de Pythagore
 
-Le triangle dont les côtés mesurent 1cm, 2,4cm et 2,6cm est rectangle.
-C'est pas moi qui le dit, c'est le théorème de Pythagore :
-
+La réciproque du théorème de Pythagore fonctionne très bien avec les nombres **entiers**
 
 ```python runnable
-a = 1
-b = 2.4
-c = 2.6
-print("a**2 + b**2 =", a**2 + b**2)
-print("c**2 =", c**2)
+a = 3
+b = 4
+c = 5
+print(a**2 + b**2 == c**2)
 ```
 
-Ah non…
-
-Et d'ailleurs, le test de la réciproque est bien faux (sic)
+Mais avec les nombres flottans, il peut y avoir quelques surprises…
 
 ```python runnable
 a = 1
 b = 2.4
 c = 2.6
-print("a**2 + b**2 == c**2 : ", a**2 + b**2 == c**2)
+print(a**2 + b**2 == c**2)
+```
+
+En effet, les valeurs sont vraiments différentes et le test est donc faux… (domage)
+
+```python runnable
+a = 1
+b = 2.4
+c = 2.6
+print(a**2 + b**2)
+print(c**2)
 ```
 
