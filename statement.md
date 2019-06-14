@@ -35,6 +35,7 @@ Ce qui engendre quelques problèmes…
 La réciproque du théorème de Pythagore fonctionne très bien avec les nombres **entiers**
 
 ```python runnable
+# Premier triangle rectangle
 a = 3
 b = 4
 c = 5
@@ -45,12 +46,18 @@ Mais avec les nombres flottans, il peut y avoir quelques surprises…
 
 ```python runnable
 # Premier triangle rectangle
+a = 3
+b = 4
+c = 5
+print(a**2 + b**2 == c**2)
+
+# Deuxième triangle rectangle
 a = 1
 b = 2.4
 c = 2.6
 print(a**2 + b**2 == c**2)
 
-# Deuxième triangle rectangle
+# Troisième triangle rectangle
 a = 20.8
 b = 30.6
 c = 37
@@ -60,14 +67,21 @@ print(a**2 + b**2 == c**2)
 En effet, les valeurs sont vraiments différentes et le test est donc faux… (domage)
 
 ```python runnable
-# Premier 
+# Premier triangle rectangle
+a = 3
+b = 4
+c = 5
+print(a**2 + b**2)
+print(c**2)
+
+# Deuxième triangle rectangle
 a = 1
 b = 2.4
 c = 2.6
 print(a**2 + b**2)
 print(c**2)
 
-# Deuxième
+# Troisième triangle rectangle
 a = 20.8
 b = 30.6
 c = 37
