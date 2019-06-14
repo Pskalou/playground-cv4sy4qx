@@ -44,19 +44,35 @@ print(a**2 + b**2 == c**2)
 Mais avec les nombres flottans, il peut y avoir quelques surprises…
 
 ```python runnable
+# Premier triangle rectangle
 a = 1
 b = 2.4
 c = 2.6
+print(a**2 + b**2 == c**2)
+
+# Deuxième triangle rectangle
+a = 20.8
+b = 30.6
+c = 37
 print(a**2 + b**2 == c**2)
 ```
 
 En effet, les valeurs sont vraiments différentes et le test est donc faux… (domage)
 
 ```python runnable
+# Premier 
 a = 1
 b = 2.4
 c = 2.6
 print(a**2 + b**2)
 print(c**2)
+
+# Deuxième
+a = 20.8
+b = 30.6
+c = 37
+print(a**2 + b**2)
+print(c**2)
+
 ```
 
