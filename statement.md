@@ -11,5 +11,5 @@ Même si ce nombre comporte 3011 chiffres…
 
 ```python runnable
 longueur = len(str(2**10000))
-print(longueur)
+print("Longueur de $2^10000$", longueur)
 ```
