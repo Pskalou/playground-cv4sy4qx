@@ -7,6 +7,9 @@ Par exemple, aucun problème pour afficher 2**10000.
 print("2**10000 = ", 2**10000)
 ```
 
-```python
-print("2**10000 = ", 2**10000)
+Même si ce nombre comporte 3011 chiffres…
+
+```python runnable
+longueur = len(str(2**10000))
+print(longueur)
 ```
