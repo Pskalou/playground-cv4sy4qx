@@ -7,6 +7,6 @@ Par exemple, aucun problème pour afficher 2**10000.
 print("2**10000 = ", 2**10000)
 ```
 
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), use the [Advanced Python template](https://tech.io/select-repo/429)
+```python
+print("2**10000 = ", 2**10000)
+```
