@@ -1,6 +1,9 @@
 # Quelques problèmes avec les nombres décimaux
 
-Python est très fort pour calculer avec des nombres entiers.
+
+## Les nombres entiers
+
+Un ordinateur est très fort pour calculer avec des nombres entiers.
 Par exemple, aucun problème pour afficher 2**10000.
 
 ```python runnable
@@ -11,5 +14,16 @@ Même si ce nombre comporte 3011 chiffres…
 
 ```python runnable
 longueur = len(str(2**10000))
-print("Longueur de $2^10000$", longueur)
+print("Nombre de chiffres dans 2**10000 : ", longueur)
+```
+
+
+## Les décimaux
+
+En revanche, un ordinateur a quelques soucis avec les nombres décimaux : les flottants.
+
+```python runnable
+print(0.1)
+print(0.2)
+print(0.1+0.2)
 ```
