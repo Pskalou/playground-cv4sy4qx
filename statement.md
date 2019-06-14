@@ -115,4 +115,19 @@ print( abs(a**2 + b**2 - c**2) < 1e-10 )
 a = 20.8
 b = 30.6
 c = 37
-print( asb(a**2 + b**2 - c**2) < 1e-10 )
+print( abs(a**2 + b**2 - c**2) < 1e-10 )
+```
+
+
+```python runnable
+a = 20.8
+b = 30.6
+c = 37
+
+n = -1
+
+while abs(a**2 + b**2 - c**2) < 10**n ):
+    n = n-1
+
+print(n)
+```
